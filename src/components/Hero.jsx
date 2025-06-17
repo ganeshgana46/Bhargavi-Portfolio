@@ -79,7 +79,7 @@ const HeroSection = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/bhargavi-kommi",
+      href: "https://www.linkedin.com/in/bhargavi-kommi-481199293/",
       icon: <FaLinkedin className="text-2xl" />,
     },
     {

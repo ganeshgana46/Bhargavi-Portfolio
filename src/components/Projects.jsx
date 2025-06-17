@@ -22,7 +22,7 @@ const Projects = () => {
       description:
         "A Power BI and ML-based tool to predict student outcomes, identify at-risk learners, and improve performance with 85% accuracy using ensemble methods.",
       tags: ["Data Science", "Machine Learning"],
-      github: "https://github.com/vchim5/Enrollments-trends-Higher-Education",
+      github: "https://github.com/bhargavikommi17/Enrollments-trends-Higher-Education",
       icon: <FaChartPie className="text-2xl text-yellow-500" />,
       bgColor: "from-amber-900/40 to-amber-900/10",
       borderColor: "border-amber-500/20",
@@ -33,7 +33,7 @@ const Projects = () => {
       description:
         "A deep learning-based system using YOLOv5 and OpenCV to monitor parking spot occupancy in real-time with 92% detection accuracy.",
       tags: ["Machine Learning", "Computer Vision"],
-      github: "https://github.com/vchim5/Automated-Parking-Status-Tracker-Using-Deep-Learning-main",
+      github: "https://github.com/bhargavikommi17/Automated-Parking-Status-Tracker-Using-Deep-Learning-main",
       icon: <SiTensorflow className="text-2xl text-orange-400" />,
       bgColor: "from-teal-900/40 to-teal-900/10",
       borderColor: "border-teal-500/20",
@@ -44,7 +44,7 @@ const Projects = () => {
       description:
         "NLP system analyzing 10K+ customer reviews using BERT to optimize restaurant menus, increasing satisfaction by 30%.",
       tags: ["NLP", "Machine Learning", "Data Analysis"],
-      github: "https://github.com/vchim5/Restaurant-Menu-Optimization-using-NLP-main",
+      github: "https://github.com/bhargavikommi17/Restaurant-Menu-Optimization-using-NLP-main",
       icon: <FaBrain className="text-2xl text-teal-400" />,
       bgColor: "from-purple-900/40 to-purple-900/10",
       borderColor: "border-purple-500/20",

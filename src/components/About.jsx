@@ -138,7 +138,7 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={imageVariants}
-            className="order-1 lg:order-1 flex justify-center relative lg:pr-20 pr-10"
+            className="order-1 lg:order-1 flex justify-center relative lg:pr-20 pr-30"
           >
             {/* Circular Profile Image - Responsive sizing */}
             <motion.div
