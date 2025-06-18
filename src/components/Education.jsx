@@ -23,7 +23,7 @@ const Education = () => {
     {
       degree: "Bachelor's in ECE",
       institution: "Undergraduate University",
-      period: "2015 - 2019",
+      period: "2017 - 2021",
       location: "Kurnool, India",
       description: "Focused on computer science fundamentals with emphasis on database systems, distributed computing, and software engineering.",
       honors: "AWS Certified: Data Engineer Associate",
@@ -226,7 +226,7 @@ const Education = () => {
           {[
             { number: "3.5", label: "GPA (Master's)", accent: "from-pink-400 to-purple-500" },
             { number: "8.5/10", label: "GPA (Bachelor's)", accent: "from-purple-400 to-indigo-500" },
-            { number: "4", label: "Cloud Certifications", accent: "from-blue-400 to-cyan-500" },
+            { number: "2", label: "Cloud Certifications", accent: "from-blue-400 to-cyan-500" },
             { number: "10+", label: "Data Engineering Projects", accent: "from-teal-400 to-emerald-500" },
           ].map((stat, index) => (
             <motion.div
