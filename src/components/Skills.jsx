@@ -1,17 +1,24 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import { FaPython, FaAws, FaDatabase, FaGitAlt, FaGithub } from "react-icons/fa";
+import {
+  FaPython,
+  FaAws,
+  FaDatabase,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
 import { VscAzureDevops } from "react-icons/vsc";
-import { 
-  SiApachespark, 
-  SiDatabricks,  
-  SiApachekafka, 
+import {
+  SiApachespark,
+  SiDatabricks,
+  SiApachekafka,
   SiSnowflake,
   SiPostgresql,
   SiDocker,
   SiKubernetes,
   SiTerraform,
   SiApachehadoop,
+  SiGooglecloud,
 } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 
@@ -41,6 +48,10 @@ const Skills = () => {
         {
           name: "AWS Glue",
           icon: <FaAws className="text-2xl text-yellow-400" />,
+        },
+        {
+          name: "GCP",
+          icon: <SiGooglecloud className="text-2xl text-blue-300" />,
         },
       ],
       bgColor: "from-blue-900/30 to-blue-900/10",
@@ -159,7 +170,7 @@ const Skills = () => {
   };
 
   React.useEffect(() => {
-    controls.start(i => ({
+    controls.start((i) => ({
       y: [0, -10, 0],
       opacity: [0.2, 0.6, 0.2],
       transition: {
@@ -185,7 +196,11 @@ const Skills = () => {
         <motion.div
           key={i}
           custom={i}
-          initial={{ x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight, opacity: 0.3 }}
+          initial={{
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+            opacity: 0.3,
+          }}
           animate={{
             y: [null, Math.random() * -200, null],
             opacity: [0.1, 0.5, 0.1],
@@ -213,7 +228,8 @@ const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto mb-6 rounded-full"></div>
           <p className="max-w-2xl mx-auto text-lg text-gray-300">
-            Tools and technologies I use to build robust, scalable data solutions
+            Tools and technologies I use to build robust, scalable data
+            solutions
           </p>
         </motion.div>
 
@@ -237,7 +253,9 @@ const Skills = () => {
                 >
                   {category.icon}
                 </motion.span>
-                <h3 className="text-xl font-bold text-gray-200">{category.title}</h3>
+                <h3 className="text-xl font-bold text-gray-200">
+                  {category.title}
+                </h3>
               </div>
               <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
@@ -253,7 +271,9 @@ const Skills = () => {
                     >
                       {skill.icon}
                     </motion.div>
-                    <span className="font-medium text-gray-200">{skill.name}</span>
+                    <span className="font-medium text-gray-200">
+                      {skill.name}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -264,25 +284,25 @@ const Skills = () => {
         {/* Additional Skills Grid */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { 
-              name: "Data Governance", 
-              icon: "🛡️", 
-              description: "Purview, Lake Formation" 
+            {
+              name: "Data Governance",
+              icon: "🛡️",
+              description: "Purview, Lake Formation",
             },
-            { 
-              name: "Data Visualization", 
-              icon: "📈", 
-              description: "Power BI, Tableau" 
+            {
+              name: "Data Visualization",
+              icon: "📈",
+              description: "Power BI, Tableau",
             },
-            { 
-              name: "CI/CD Pipelines", 
-              icon: "🔄", 
-              description: "Azure DevOps, GitHub Actions" 
+            {
+              name: "CI/CD Pipelines",
+              icon: "🔄",
+              description: "Azure DevOps, GitHub Actions",
             },
-            { 
-              name: "Monitoring", 
-              icon: "👀", 
-              description: "CloudWatch, Azure Monitor" 
+            {
+              name: "Monitoring",
+              icon: "👀",
+              description: "CloudWatch, Azure Monitor",
             },
           ].map((item, index) => (
             <motion.div
@@ -291,7 +311,9 @@ const Skills = () => {
               className="bg-gray-800/50 p-6 rounded-xl text-center border border-gray-700 hover:border-pink-500/40 transition-all shadow-sm backdrop-blur-sm"
             >
               <div className="text-3xl mb-3">{item.icon}</div>
-              <h4 className="text-lg font-bold text-gray-200 mb-2">{item.name}</h4>
+              <h4 className="text-lg font-bold text-gray-200 mb-2">
+                {item.name}
+              </h4>
               <p className="text-sm text-gray-400">{item.description}</p>
             </motion.div>
           ))}

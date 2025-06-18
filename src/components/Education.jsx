@@ -17,14 +17,14 @@ const Education = () => {
       location: "West Haven, CT, USA",
       description: "Specialized in data analytics, machine learning, and cloud computing with a focus on real-world data engineering applications.",
       honors: "Microsoft Certified: Azure Data Engineer Associate",
-      gpa: "3.7/4",
+      gpa: "3.5/4",
       icon: <FaDatabase className="text-blue-400 text-xl" />
     },
     {
-      degree: "Bachelor's in Computer Science",
+      degree: "Bachelor's in ECE",
       institution: "Undergraduate University",
       period: "2015 - 2019",
-      location: "Hyderabad, India",
+      location: "Kurnool, India",
       description: "Focused on computer science fundamentals with emphasis on database systems, distributed computing, and software engineering.",
       honors: "AWS Certified: Data Engineer Associate",
       gpa: "8.5/10",
@@ -34,9 +34,7 @@ const Education = () => {
 
   const certifications = [
     { name: "Microsoft Certified: Azure Data Engineer Associate", year: "2023" },
-    { name: "AWS Certified: Data Engineer Associate", year: "2023" },
-    { name: "Databricks Certified Data Engineer Associate", year: "2023" },
-    { name: "Google Cloud Professional Data Engineer", year: "2022" }
+    { name: "AWS Certified: Data Engineer Associate", year: "2023" }
   ];
 
   const coursework = [
@@ -226,7 +224,7 @@ const Education = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
           {[
-            { number: "3.7", label: "GPA (Master's)", accent: "from-pink-400 to-purple-500" },
+            { number: "3.5", label: "GPA (Master's)", accent: "from-pink-400 to-purple-500" },
             { number: "8.5/10", label: "GPA (Bachelor's)", accent: "from-purple-400 to-indigo-500" },
             { number: "4", label: "Cloud Certifications", accent: "from-blue-400 to-cyan-500" },
             { number: "10+", label: "Data Engineering Projects", accent: "from-teal-400 to-emerald-500" },
